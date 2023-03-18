@@ -12,14 +12,14 @@ public class InternalFrames extends JFrame{
 		JFrame v = new JFrame("last master test");
 		JDesktopPane dp = new JDesktopPane();
 		v.getContentPane().add(dp);
-    
+		pFinal.add(Menu.Tablas(Medio.p));
+		pFinal.add(botones.Tablas(botones.p));
+		pFinal.add(Medio.Tablas(Medio.p));
+		pFinal.add(TablaFormulario.PT(Medio.p));
+		pFinal.add(Abajo.PT(Medio.p));
 		// Se construye el JInternalFrame
 		JInternalFrame internal = new JInternalFrame("",true,true,true,true);
-		internal.add(Menu.Tablas(TablaFormulario.p));
-		internal.add(botones.Tablas(TablaFormulario.p));
-		internal.add(Medio.Tablas(TablaFormulario.p));
-		internal.add(TablaFormulario.PT(TablaFormulario.p));
-		internal.add(Abajo.PT(TablaFormulario.p));
+		internal.add(pFinal);
 		//NOTA: NO LOGRO HACER QUE SE ACOMODEN DONDE YO QUIERO
 		internal.pack();
 		internal.setResizable(true);
